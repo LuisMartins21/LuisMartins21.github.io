@@ -234,8 +234,7 @@ body.border-dark .main-content:after{
 =======================================================*/
 .section-main{
 	background-size:cover;
-	/*background-image:url(../img/bg.jpg);*/
-	background-color: #424242;
+	background-image:url(../img/bg.jpg);
 
 }
 .section-main:before{
@@ -245,7 +244,7 @@ body.border-dark .main-content:after{
 	left:0;
 	height:100%;
 	width:100%;
-	background:#303F9F;
+	background-color: #424242;
 	opacity:.8;
 	z-index:-1;
 }
