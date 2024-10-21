@@ -243,7 +243,7 @@ body.border-dark .main-content:after{
 	left:0;
 	height:100%;
 	width:100%;
-	background:#303F9F;
+	background:#4d4d4d;
 	opacity:.8;
 	z-index:-1;
 }
