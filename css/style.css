@@ -244,7 +244,7 @@ body.border-dark .main-content:after{
 	left:0;
 	height:100%;
 	width:100%;
-	background-color: #424242;
+	background-color: #767676;
 	opacity:.8;
 	z-index:-1;
 }
