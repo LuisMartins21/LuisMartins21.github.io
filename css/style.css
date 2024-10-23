@@ -1269,8 +1269,8 @@ body.loaded #preloader .loader{
 	height:140px;
 	width:140px;
 	border:solid 4px #FFF;
-	border-top-color:#303F9F;
-	border-right-color:#303F9F;
+	border-top-color:#2c2c2c;
+	border-right-color:#2c2c2c;
 	border-radius:50%;
 	position:absolute;
 	top:50%;
