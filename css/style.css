@@ -144,7 +144,7 @@ body.border-dark .menu-btn > .lines > span{
 	transition:border-color 2.5s cubic-bezier(.785,.135,.15,.86);
 }
 body.border-dark .main-content > .page-border{
-	border-color:#303F9F;
+	border-color:#2c2c2c;
 }
 .main-content > .border-top,
 .main-content > .border-bottom{
