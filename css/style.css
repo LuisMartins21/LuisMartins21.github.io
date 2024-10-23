@@ -892,7 +892,7 @@ body.section-switching.up .animation-block{
 
 
 /*=======================================================
-	Portfolio Section
+	Projects Section
 =======================================================*/
 .portfolio-block .section-header{
 	margin-bottom:80px;
@@ -953,7 +953,7 @@ body.section-switching.up .animation-block{
 	bottom:0;
 	right:-10px;
 	left:-10px;
-	background:#303F9F;
+	background:#d8d8d8;
 	opacity:.9;
 	-webkit-transform:rotate(0deg) scale(0);
 	-moz-transform:rotate(0deg) scale(0);
