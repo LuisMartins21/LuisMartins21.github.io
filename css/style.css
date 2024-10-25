@@ -573,7 +573,7 @@ body.section-switching.up .animation-block{
 	-ms-transform:rotate(-4deg);
 	-o-transform:rotate(-4deg);
 	transform:rotate(-4deg);
-	background:#303F9F;
+	background:rgba(255,255,255,.6);
 	opacity:0;
 	visibility:hidden;
 	z-index:-1;
@@ -695,7 +695,7 @@ body.section-switching.up .animation-block{
 	right:0;
 	top:-10px;
 	bottom:-10px;
-	background:#303F9F;
+	background:rgba(255,255,255,.6);
 	-webkit-transform:rotate(-4deg);
 	-moz-transform:rotate(-4deg);
 	-ms-transform:rotate(-4deg);
