@@ -227,7 +227,7 @@ body.section-switching .main-content:after {
 }
 body.border-dark .main-content:before,
 body.border-dark .main-content:after {
-        border-color: #303f9f;
+        border-color: #f0f0f0;
 }
 .sections {
         height: 100%;
@@ -338,7 +338,7 @@ a.btn-custom {
         visibility: visible;
 }
 .btn-custom.btn-color:after {
-        background: #303f9f;
+        background: #f0f0f0;
 }
 .btn-custom.btn-color:hover:after {
         opacity: 0.4;
@@ -843,7 +843,7 @@ body.section-switching.up .animation-block {
 }
 .testimonial > .icon {
         font-size: 64px;
-        color: #303f9f;
+        color: #f0f0f0;
         opacity: 0.6;
 }
 .testimonial > p {
@@ -883,7 +883,7 @@ body.section-switching.up .animation-block {
         height: 6px;
         width: 36px;
         margin-right: 7px;
-        background: #303f9f;
+        background: #f0f0f0;
         opacity: 0.4;
 }
 .testimonials-slider .owl-controls .owl-dot.active > span {
@@ -1175,7 +1175,7 @@ body.section-switching.up .animation-block {
         transition: none;
 }
 .form-control:focus {
-        border-color: #303f9f;
+        border-color: #f0f0f0;
 }
 .contact-form .btn-custom {
         padding: 19px 35px;
