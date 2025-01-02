@@ -13,6 +13,55 @@ $(function () {
         }
 
         /*=========================================================================
+        Toggle Menu Open/Close
+    =========================================================================*/
+        $(".menu-btn").on("click", function () {
+                $(".menu").toggleClass("open"); // Toggle the 'open' class on the menu
+        });
+
+        /*=========================================================================
+        Close Menu When a Link is Clicked
+    =========================================================================*/
+        $(".menu .section-toggle").on("click", function () {
+                $(".menu").removeClass("open"); // Close the menu by removing 'open' class
+        });
+
+        /*=========================================================================
+        Navigation Functionality
+    =========================================================================*/
+        $(".section-toggle").on("click", function () {
+                var $this = $(this),
+                        sect = $("#" + $this.data("section")),
+                        current_sect = $(".section.active");
+                if (
+                        sect.length == 1 &&
+                        !sect.hasClass("active") &&
+                        !$("body").hasClass("section-switching")
+                ) {
+                        $("body").addClass("section-switching");
+                        if (sect.index() < current_sect.index()) {
+                                $("body").addClass("up");
+                        } else {
+                                $("body").addClass("down");
+                        }
+                        setTimeout(function () {
+                                $("body").removeClass(
+                                        "section-switching up down",
+                                );
+                        }, 2500);
+                        setTimeout(function () {
+                                current_sect.removeClass("active");
+                                sect.addClass("active");
+                        }, 1250);
+                        if (sect.hasClass("border-d")) {
+                                $("body").addClass("border-dark");
+                        } else {
+                                $("body").removeClass("border-dark");
+                        }
+                }
+        });
+
+        /*=========================================================================
         Magnific Popup (Project Popup initialization)
     =========================================================================*/
         $(".view-project").magnificPopup({
@@ -27,12 +76,11 @@ $(function () {
                 mainClass: "my-mfp-zoom-in",
         });
 
+        /*=========================================================================
+        Portfolio Grid
+    =========================================================================*/
         $(window).on("load", function () {
                 $("body").addClass("loaded");
-
-                /*=========================================================================
-            Portfolio Grid
-        =========================================================================*/
                 portfolio.shuffle();
                 $(".portfolio-filters > li > a").on("click", function (e) {
                         e.preventDefault();
@@ -41,52 +89,6 @@ $(function () {
                         $(this).addClass("active");
                         portfolio.shuffle("shuffle", groupName);
                 });
-        });
-
-        /*=========================================================================
-        Navigation Functions
-    =========================================================================*/
-        $(".section-toggle").on("click", function () {
-                var $this = $(this),
-                        sect = $("#" + $this.data("section")),
-                        current_sect = $(".section.active");
-                if (sect.length == 1) {
-                        if (
-                                !sect.hasClass("active") &&
-                                !$("body").hasClass("section-switching")
-                        ) {
-                                $("body").addClass("section-switching");
-                                if (sect.index() < current_sect.index()) {
-                                        $("body").addClass("up");
-                                } else {
-                                        $("body").addClass("down");
-                                }
-                                setTimeout(function () {
-                                        $("body").removeClass(
-                                                "section-switching up down",
-                                        );
-                                }, 2500);
-                                setTimeout(function () {
-                                        current_sect.removeClass("active");
-                                        sect.addClass("active");
-                                }, 1250);
-                                if (sect.hasClass("border-d")) {
-                                        $("body").addClass("border-dark");
-                                } else {
-                                        $("body").removeClass("border-dark");
-                                }
-                        }
-                }
-
-                // Close the menu if open
-                if ($(".menu").hasClass("open")) {
-                        $(".menu").removeClass("open");
-                }
-        });
-
-        // Toggle menu open/close
-        $(".menu-btn").on("click", function () {
-                $(".menu").toggleClass("open");
         });
 
         /*=========================================================================
@@ -117,18 +119,14 @@ $(function () {
                 .validator()
                 .on("submit", function (e) {
                         if (!e.isDefaultPrevented()) {
-                                // If there is no any error in validation then send the message
-
                                 e.preventDefault();
                                 var $this = $(this),
-                                        // You can edit alerts here
                                         alerts = {
                                                 success: "<div class='form-group' >\
                             <div class='alert alert-success' role='alert'> \
                                 <strong>Message Sent!</strong> We'll be in touch as soon as possible\
                             </div>\
                         </div>",
-
                                                 error: "<div class='form-group' >\
                             <div class='alert alert-danger' role='alert'> \
                                 <strong>Oops!</strong> Sorry, an error occurred. Try again.\
@@ -146,7 +144,6 @@ $(function () {
                                                                 $.parseJSON(
                                                                         data,
                                                                 );
-
                                                         if (
                                                                 data["error"] ==
                                                                 false
@@ -156,7 +153,6 @@ $(function () {
                                                                 ).html(
                                                                         alerts.success,
                                                                 );
-
                                                                 $(
                                                                         "#contact-form",
                                                                 ).trigger(
