@@ -1009,6 +1009,10 @@ body.section-switching.up .animation-block {
 .portfolio-items > li > .inner > .overlay > .view-project:hover {
         color: #fff;
 }
+
+.main-project-img {
+        max-height: 75%;
+}
 /*== Project Popup ==*/
 .mfp-bg {
         background: #000000cb;
