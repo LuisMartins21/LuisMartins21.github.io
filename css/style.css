@@ -1187,6 +1187,7 @@ body.section-switching.up .animation-block {
 }
 .contact-info {
         margin-bottom: 25px;
+        text-decoration: none;
 }
 .contact-info:before,
 .contact-info:after {
@@ -1213,17 +1214,6 @@ body.section-switching.up .animation-block {
         margin-top: 5px;
 }
 
-.intagram-btn {
-        text-decoration: none;
-        float: left;
-        font-size: 16px;
-        line-height: 1.6em;
-        font-style: italic;
-        color: rgba(0, 0, 0, 0.4);
-        margin: 0;
-        margin-top: 5px;
-        list-style: none;
-}
 @media (min-width: 992px) {
         .contact-info-icons {
                 padding-left: 30px;
