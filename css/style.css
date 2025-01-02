@@ -1212,6 +1212,11 @@ body.section-switching.up .animation-block {
         margin: 0;
         margin-top: 5px;
 }
+
+.intagram-btn {
+        text-decoration: none;
+        list-style: none;
+}
 @media (min-width: 992px) {
         .contact-info-icons {
                 padding-left: 30px;
