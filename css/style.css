@@ -14,7 +14,7 @@
 
 	06. Resume Section
 
-	07. Portfolio Section
+	07. Projects Section
 
 	08. Contact Section
 
@@ -1134,6 +1134,10 @@ body.section-switching.up .animation-block {
         font-weight: 500;
 }
 
+.popup-box zoom-anim-dialog mfp-hide {
+        max-height: 45px;
+}
+
 /*=======================================================
 	Contact Section
 =======================================================*/
@@ -1199,7 +1203,7 @@ body.section-switching.up .animation-block {
         color: black;
 }
 .contact-info > p {
-        float: left;
+        /*float: left;*/
         font-size: 16px;
         line-height: 1.6em;
         font-style: italic;
