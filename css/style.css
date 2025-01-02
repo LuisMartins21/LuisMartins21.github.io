@@ -1214,6 +1214,11 @@ body.section-switching.up .animation-block {
         margin-top: 5px;
 }
 
+.contact-info > p > a {
+        text-decoration: none;
+        color: inherit;
+}
+
 @media (min-width: 992px) {
         .contact-info-icons {
                 padding-left: 30px;
