@@ -1204,13 +1204,15 @@ body.section-switching.up .animation-block {
         color: black;
 }
 .contact-info > p {
-        /*float: left;*/
+        float: left;
         font-size: 16px;
         line-height: 1.6em;
         font-style: italic;
         color: rgba(0, 0, 0, 0.4);
         margin: 0;
         margin-top: 5px;
+        text-decoration: none;
+        list-style: none;
 }
 
 .intagram-btn {
