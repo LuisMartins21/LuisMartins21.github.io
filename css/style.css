@@ -1219,6 +1219,10 @@ body.section-switching.up .animation-block {
         color: inherit;
 }
 
+.contact-info > p > a :hover {
+        font-weight: bold;
+}
+
 @media (min-width: 992px) {
         .contact-info-icons {
                 padding-left: 30px;
