@@ -1011,7 +1011,7 @@ body.section-switching.up .animation-block {
 }
 
 .main-project-img {
-        max-height: 75%;
+        max-height: 100px;
 }
 /*== Project Popup ==*/
 .mfp-bg {
