@@ -15,15 +15,20 @@ $(function () {
         /*=========================================================================
         Toggle Menu Open/Close
     =========================================================================*/
-        $(".menu-btn").on("click", function () {
-                $(".menu").toggleClass("open"); // Toggle the 'open' class on the menu
+        $(".menu-btn").on("click", function (e) {
+                e.preventDefault(); // Prevent default anchor behavior
+                if ($(".menu").hasClass("open")) {
+                        $(".menu").removeClass("open"); // Close the menu if open
+                } else {
+                        $(".menu").addClass("open"); // Open the menu if closed
+                }
         });
 
         /*=========================================================================
         Close Menu When a Link is Clicked
     =========================================================================*/
         $(".menu .section-toggle").on("click", function () {
-                $(".menu").removeClass("open"); // Close the menu by removing 'open' class
+                $(".menu").removeClass("open"); // Close the menu
         });
 
         /*=========================================================================
