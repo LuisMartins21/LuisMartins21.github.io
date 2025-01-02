@@ -563,6 +563,7 @@ body.section-switching.up .animation-block {
 .service {
         padding: 35px;
         position: relative;
+        max-height: 595px;
 }
 .service:after {
         content: " ";
