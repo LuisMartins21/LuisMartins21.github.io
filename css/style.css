@@ -1010,9 +1010,15 @@ body.section-switching.up .animation-block {
         color: #fff;
 }
 
-.main-project-img {
-        max-height: 100px;
+.portfolio-items .inner .main-project-img {
+        height: 150px;
 }
+
+.portfolio-items .inner .main-project-img img {
+        height: 100%;
+        width: 100%;
+}
+
 /*== Project Popup ==*/
 .mfp-bg {
         background: #000000cb;
