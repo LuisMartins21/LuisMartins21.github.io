@@ -1011,7 +1011,7 @@ body.section-switching.up .animation-block {
 }
 
 .portfolio-items .inner .main-project-img {
-        height: 150px;
+        object-fit: contain;
 }
 
 .portfolio-items .inner .main-project-img img {
